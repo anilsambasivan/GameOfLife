@@ -1,0 +1,17 @@
+﻿div.gridView div .RowX {
+    display: table-row;
+}
+
+div.gridView div .cell {
+    display: table-cell;
+    width: 15px;
+    height: 10px;
+    border: solid;
+    border-width: thin;
+}
+
+div.gridView div.alive {
+    background-color: green;
+}
+
+

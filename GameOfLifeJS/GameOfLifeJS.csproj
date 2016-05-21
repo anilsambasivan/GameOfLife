@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{0D975269-E521-4AA9-9AC2-BB9E4F362F28}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="content\app.css" />
+    <Content Include="content\css\bootstrap.css" />
+    <Content Include="content\css\bootstrap.min.css" />
+    <Content Include="content\css\portfolio-item.css" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\js\bootstrap.js" />
+    <Content Include="content\js\bootstrap.min.js" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="index.html" />
+    <Content Include="lib\backbone\backbone.js" />
+    <Content Include="lib\backbone\backbone.min.js" />
+    <Content Include="lib\backbone\backbone.min.map" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\underscore\underscore.js" />
+    <Content Include="lib\underscore\underscore.min.js" />
+    <None Include="lib\jquery\jquery-2.2.3.intellisense.js" />
+    <Content Include="lib\jquery\jquery-2.2.3.js" />
+    <Content Include="lib\jquery\jquery-2.2.3.min.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="lib\backbone\backbone-global.d.ts" />
+    <TypeScriptCompile Include="lib\backbone\backbone.d.ts" />
+    <TypeScriptCompile Include="lib\underscore\underscore.d.ts" />
+    <TypeScriptCompile Include="lib\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="src\datamanager\DataManager.ts" />
+    <TypeScriptCompile Include="src\datamanager\Services\IPatternService.ts" />
+    <TypeScriptCompile Include="src\datamanager\Services\IRuleService.ts" />
+    <TypeScriptCompile Include="src\datamanager\Services\PatternService.ts" />
+    <TypeScriptCompile Include="src\datamanager\Services\RuleService.ts" />
+    <TypeScriptCompile Include="src\meridium\GameOfLife.ts" />
+    <TypeScriptCompile Include="src\meridium\collection\cellCollection.ts" />
+    <TypeScriptCompile Include="src\meridium\collection\patternCollection.ts" />
+    <TypeScriptCompile Include="src\meridium\Component.ts" />
+    <TypeScriptCompile Include="src\meridium\ComponentFactory.ts" />
+    <TypeScriptCompile Include="src\meridium\ControlPanel.ts" />
+    <TypeScriptCompile Include="src\meridium\GameBoard.ts" />
+    <TypeScriptCompile Include="src\meridium\IComponent.ts" />
+    <TypeScriptCompile Include="src\meridium\IComponentOptions.ts" />
+    <TypeScriptCompile Include="src\meridium\model\pattern.ts" />
+    <TypeScriptCompile Include="src\meridium\model\rule.ts" />
+    <TypeScriptCompile Include="src\meridium\model\cell.ts" />
+    <TypeScriptCompile Include="src\meridium\timer.ts" />
+    <TypeScriptCompile Include="src\meridium\views\cellsRowView.ts" />
+    <TypeScriptCompile Include="src\meridium\views\cellView.ts" />
+    <TypeScriptCompile Include="src\meridium\views\controlPanelView.ts" />
+    <TypeScriptCompile Include="src\meridium\views\gameGridView.ts" />
+    <TypeScriptCompile Include="src\meridium\views\IGridViewOptions.ts" />
+    <TypeScriptCompile Include="src\meridium\views\patternsDropDown.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="lib\underscore\underscore.min.map" />
+    <Content Include="lib\jquery\jquery-2.2.3.min.map" />
+    <Content Include="packages.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GameOfLifeJS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54703</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54703/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptSourceRoot>C:\Work\GameOfLife\GameOfLife\GameOfLifeJS\src\meridium</TypeScriptSourceRoot>
+    <TypeScriptOutDir>C:\Work\GameOfLife\GameOfLife\GameOfLifeJS\build</TypeScriptOutDir>
+    <TypeScriptOutFile>C:\Work\GameOfLife\GameOfLife\GameOfLifeJS\build\gameoflife.js</TypeScriptOutFile>
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptModuleKind>system</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
