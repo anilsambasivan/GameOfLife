@@ -8,6 +8,7 @@ Backbone, Typescript, Entityframework, Asp.Net MVC, Asp.Net Web API, Grunt, boot
 # Settin up environment
 
 Database
+
 1. Connection string, change the connection string according to your local database
     <add key="ConnectionString" value="Data Source=DELL\SQLEXPRESS;Initial Catalog=gameoflife;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=Anil@123" />
 2. This is a code first approch, but still you can just run the scripts provided in scripts folder, that will create the tables and initial data for you.
