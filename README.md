@@ -1,11 +1,11 @@
 # GameOfLife
 Game of life application
 
-Technology Stack
+#Technology Stack
 
 Backbone, Typescript, Entityframework, Asp.Net MVC, Asp.Net Web API, Grunt, bootstrap and SQl Server
 
-Settin up environment
+# Settin up environment
 
 Database
 
