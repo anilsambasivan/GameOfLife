@@ -1,4 +1,5 @@
 ﻿var BackBoneEvents = BackBoneEvents || {};
+var apiurl = apiurl || {};
 
 module GameOfLifeJs {
     export class GameOfLife {
@@ -47,7 +48,7 @@ window.onload = () => {
     var elGameBoard = document.getElementById('content');
     var elControlPanel = document.getElementById('controls');
     var dataManager = new GameOfLifeJs.DataManager({
-        baseurl: 'http://localhost/GameOfLifeService/api'
+        baseurl: apiurl
     });
     var gameOfLifeApp = new GameOfLifeJs.GameOfLife(elGameBoard, elControlPanel, dataManager);
     

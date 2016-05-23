@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Configuration;
+using System.Web.Mvc;
+using GameOfLifeWeb.Models;
 
 namespace GameOfLifeWeb.Controllers
 {
@@ -6,7 +8,11 @@ namespace GameOfLifeWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new HomeModel
+            {
+                ApiUrl = System.Configuration.ConfigurationManager.AppSettings["apiurl"]
+            };
+            return View(model);
         }
     }
 }
