@@ -1,7 +1,5 @@
 # GameOfLife
 
-![Alt text](/game of life.png?raw=true
-
 #Technology Stack
 
 Backbone, Typescript, Entityframework, Asp.Net MVC, Asp.Net Web API, Grunt, bootstrap and SQl Server
