@@ -1,6 +1,6 @@
 # GameOfLife
 
-https://cloud.githubusercontent.com/assets/1938644/15462463/9268b8fe-20e0-11e6-880d-170969e9d49d.png
+![Game Of Lfe](https://cloud.githubusercontent.com/assets/1938644/15462463/9268b8fe-20e0-11e6-880d-170969e9d49d.png)
 
 #Technology Stack
 
