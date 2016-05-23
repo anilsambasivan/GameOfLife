@@ -24,7 +24,7 @@ To set up the dev environment for GameOfLifeJS, you need to install
 
 1. Typescript 1.7  or above, 
 2. Install Grunt globally as I am using grunt for cpying and uglifying tasks.
-3. Task Runner Explorer to run the grunt task.
+3. Task Runner Explorer to run the grunt task. (Download url - https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708)
 
 Once above prerequisites are ready, build the project and run the grunt task using task runner explorer, this will uglify and copy the required files from GameOfLifeJS project build folder to GameOfLifeWeb Script folder.
 
