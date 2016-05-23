@@ -1,5 +1,6 @@
 # GameOfLife
-Game of life application
+
+![Alt text](/game of life.png?raw=true
 
 #Technology Stack
 
